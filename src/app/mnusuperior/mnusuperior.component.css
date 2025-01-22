@@ -1,0 +1,105 @@
+*{
+  
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+.menu 
+{
+  background: linear-gradient(to right, #FF2D00, #FF8000);
+  display: flex;
+  align-items: center;
+  position:fixed;
+  top: 0;
+  left:0;
+  justify-content: space-between;
+  height: 130px;  
+  width: 100%; /* Usa 100vw para ocupar todo el ancho de la ventana */
+  height: 120px; /* Altura del menú */
+}
+
+#logo
+{
+  align-self: center; 
+  margin-left: 10px;
+}
+
+#usuari
+{
+  margin-right: 10px;
+}
+
+.navbar 
+{
+  align-items: center;
+  float: right;
+}
+
+.navbar-nav 
+{
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  padding-left:0 ;
+  float: right;
+}
+
+.navbar-nav .nav-item
+{
+  margin-left: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 20px;
+  padding: 8px 16px;
+  display: flex;
+}
+
+/* Efecto de hover */
+.nav-link:hover {
+  background-color: #f02106; /* Cambia a un color más oscuro en hover */
+  border-radius: 5px;
+}
+
+/* Estilo para el avatar */
+.user-icon {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: right;
+  margin-left: 4em;
+}
+
+/* Estilo para el dropdown */
+/*.custom-dropdown-menu {
+  background-color: #c22323;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: none;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  color: #333333;
+  padding: 10px;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+ Estilo para el perfil 
+.dropdown-divider {
+  margin: 5px 0;
+}
+*/
+

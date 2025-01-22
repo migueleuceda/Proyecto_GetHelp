@@ -1,0 +1,107 @@
+/* Configuración global */
+
+
+h2
+{
+    font-size: 32px;
+}
+/* Contenedor principal */
+.container {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+    border-radius: 10px;
+        
+}
+
+
+/* Perfil (foto y nombre del usuario) */
+.perfil {
+    
+    display: flex;
+    float: left;
+    align-items: center;
+    gap: 10px;
+    margin: 3em;
+    
+   
+}
+
+.imatge
+{
+    border: 2px solid #0000;
+    border-radius: 50%;
+}
+
+/* Foto de usuario */
+.foto-usuario {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    float: right;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+
+
+/* Caja de texto de reseña */
+.textResenya {
+    width: 40%; 
+    height: 120px;
+    border: 2px solid #070707;
+    border-radius: 10px;
+    
+    padding-top:10px;
+    padding-left: 10px;
+
+}
+
+/* Estrellas */
+.estrellas {
+    font-size: 2em;
+    color: gold;
+    text-align: center;
+    width: 100%; /* Alinea con el resto de los elementos */
+}
+
+/* Botones */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Botones */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px; /* Ajustado el tamaño del texto */
+    cursor: pointer;
+    width: auto;
+    margin: 0 10px;
+}
+
+.botoCancelar {
+    background-color: #8f0909;
+    color: white;
+}
+
+.botoCancelar:hover {
+    background-color: #b80d0d;
+}
+
+.botoConfirmar {
+    background-color: #1b9b02;
+    color: white;
+}
+
+.botoConfirmar:hover {
+    background-color: #25c206;
+}
