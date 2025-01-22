@@ -1,0 +1,50 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <img src="../../assets/img/manoLogo2.png" id="logo" alt="logo" class="mb-4" width="120" height="60">
+
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card shadow-lg bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-md-5 mt-md-4 pb-4">
+
+                            <h2 class="fw-bold mb-2 text-uppercase">Registrar-se</h2>
+                            <p class="text-white-50 mb-4">Creeu el vostre compte omplint la informació següent</p>
+
+                            <form>
+                                <div class="form-outline form-white mb-4">
+                                    <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Enter your name" required />
+                                    <label class="form-label" for="name">Nom</label>
+                                </div>
+
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label" for="email">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control form-control-lg" placeholder="Enter your email" required />
+                                </div>
+
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label" for="password">Contrasenya</label>
+                                    <input type="password" id="password" name="password" class="form-control form-control-lg" placeholder="Enter your password" required />
+                                </div>
+
+                                <div class="form-outline form-white mb-4">
+                                    <input type="password" id="confirmPassword" name="confirmPassword" class="form-control form-control-lg" placeholder="Confirm your password" required />
+                                    <label class="form-label" for="confirmPassword">Confirma la Contrasenya</label>
+                                </div>
+
+                                <button class="btn btn-primary btn-lg px-5 w-100" type="submit">Sign Up</button>
+
+                                <div>
+                                    <p class="mb-0">
+                                        Don't have an account? 
+                                        <a [routerLink]="'/LogIn'" class="text-white-50 fw-bold text-decoration-underline">Log In</a>
+                                    </p>                               
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
