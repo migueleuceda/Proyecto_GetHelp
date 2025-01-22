@@ -18,7 +18,7 @@ import { ResenyaComponent } from './resenya/resenya.component';
     AppComponent,
     MnusuperiorComponent,
     LoginComponent,
-    ResenyaComponent
+    ResenyaComponent,
     SignUpComponent,
     HomeComponent
   ],
