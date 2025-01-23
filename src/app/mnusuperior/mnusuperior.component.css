@@ -40,7 +40,9 @@
 
 .navbar-nav 
 {
-  display: flex;
+  
+  display: flex !important;
+  flex-direction: row !important;
   list-style: none;
   margin-left: auto;
   padding-left:0 ;
