@@ -1,1 +1,84 @@
-<p>home works!</p>
+<style src="home.component.css"></style>
+<header>
+<div class="header">
+    <div class="logo">
+        <span>GET HELP</span>
+    </div>
+    <nav class="nav-menu">
+        <a href="http://localhost:4200/Home">Home</a>
+        <a href="#">About</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact us</a>
+    </nav>
+    <div class="user-icon">
+        <span>👤</span>
+    </div>
+</div>
+</header>
+
+<div class="content">
+    <p class="subtitle">The making of a Marvel prototype</p>
+    <h1>How I turned my app idea into a real business.</h1>
+    <button class="cta-button">Button</button>
+</div>
+
+<!-- Carruseles -->
+<div class="carousel-section">
+    <h2>Nuevos lanzamientos</h2>
+    <div class="carousel">
+        <button class="carousel-btn prev">❮</button>
+        <div class="carousel-items">
+            <img *ngFor="let item of newReleases" [src]="item" alt="New Release" />
+        </div>
+        <button class="carousel-btn next">❯</button>
+    </div>
+</div>
+
+<div class="carousel-section">
+    <h2>Recomendados para ti</h2>
+    <div class="carousel">
+        <button class="carousel-btn prev">❮</button>
+        <div class="carousel-items">
+            <img *ngFor="let item of recommended" [src]="item" alt="Recommended" />
+        </div>
+        <button class="carousel-btn next">❯</button>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h2>GET HELP</h2>
+            <p>Brindamos soluciones rápidas y efectivas para tus necesidades. Confía en nosotros para obtener la mejor asistencia.</p>
+        </div>
+        <div class="footer-section links">
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a [routerLink]="'/LogIn'">Inicio</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h3>Contacto</h3>
+            <p><strong>Email:</strong> supportgethelp.com</p>
+            <p><strong>Teléfono:</strong> +1 (234) 567-890</p>
+            <p><strong>Dirección:</strong> 123 Calle Ejemplo, Ciudad, País</p>
+        </div>
+        <div class="footer-section social">
+            <h3>Síguenos</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 GET HELP. Todos los derechos reservados.</p>
+    </div>
+</footer>
+

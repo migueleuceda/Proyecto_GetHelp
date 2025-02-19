@@ -1,17 +1,10 @@
-html, body {
-    height: auto;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0; 
-}
-
 .btn-primary {
     background-color: #FF2D00;
     color: white;
     border: none;
     transform: scale(1);
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(255, 45, 0, 0.5); 
+    box-shadow: 0 4px 10px rgba(255, 45, 0, 0.5);
 }
 
 .btn-primary:hover {
@@ -30,7 +23,7 @@ html, body {
 }
 
 
-#logo { 
+#logo {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -48,8 +41,8 @@ html, body {
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     max-width: 100%; /* Evita que la tarjeta sea más ancha que el contenedor */
-    box-sizing: border-box; /* Considera padding y bordes en el ancho total*/ 
-} 
+    box-sizing: border-box; /* Considera padding y bordes en el ancho total */
+}
 
 
 .gradient-custom {
@@ -60,17 +53,17 @@ html, body {
     overflow: hidden; /* Evita scrollbars si no son necesarios */
 }
 
+/* Ajusta el tamaño y centrado del contenido */
+.container {
+    max-width: 100%; /* Evita que el contenedor supere el ancho disponible */
+    padding: 0 15px; /* Asegura espacio interno */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
 .form-container {
     background: rgba(53, 20, 20, 0.623); /* Fondo semi-transparente */
     backdrop-filter: blur(10px); /* Efecto de desenfoque */
     border: 1px solid rgba(255, 255, 255, 0.3); /* Borde sutil */
     border-radius: 10px; /* Bordes redondeados */
     color: white; /* Asegura que el texto sea visible */
-}
-
-/* Ajusta el tamaño y centrado del contenido */
-.container {
-    max-width: 100%; /* Evita que el contenedor supere el ancho disponible */
-    padding: 0 15px; /* Asegura espacio interno */
-    margin: 0 auto; /* Centra el contenedor */
 }

@@ -1,15 +1,19 @@
 <html>
   <head>
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    
     <link rel="stylesheet" href="mnusuperior.component.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
-    <nav class="menu">
+
+    <nav class="menu" [ngClass]="{'open': menuOpen}">
       <a href="../../index.html" id="logo"><img src="../../assets/img/manoLogo2.png" width="90px" height="80px"/></a>
 
-      <ul class="navbar-nav">
+      
+      <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+
+      <ul class="navbar-nav"[ngClass]="{ 'show': menuOpen }">
         <li class="nav-item" *ngFor="let p of PAGINES">
           <a class="nav-link" [ngClass]="{ 'text-warning': quinLink === p.url }" href="{{ p.url }}"> {{ p.nom }}</a>
         </li>
@@ -17,9 +21,9 @@
 
       
       <div class="dropdown ms-auto" (click)="toggleDropdown()">
-        <img src="{{ urlAvatar }}" width="40px" height="40px" id="usuari" class="rounded-circle user-icon"/>
-
-        <!-- Menú desplegable -->
+       <!-- <img src="{{ urlAvatar }}" width="40px" height="40px" id="usuari" class="rounded-circle user-icon"/>-->
+        <img src="../../assets/img/77c7fec47f7911878509662852d9a8b8.jpg" width="40px" height="40px" id="usuari" class="rounded-circle user-icon"/>
+         
         <ul
           *ngIf="dropdownOpen" class="dropdown-menu dropdown-menu-end show custom-dropdown-menu">
           <li><a class="dropdown-item-text text-muted" href="/perfils"></a></li>
@@ -30,7 +34,43 @@
         </ul>
       </div> 
     </nav>
+
+<!--    <nav class="navbar navbar-expand-lg navbar-expand-md bg-gradient fixed-top" style="background: linear-gradient(to right, #FF2D00, #FF8000);">
+      <div class="container-fluid">
+         Logo 
+        <a class="navbar-brand" href="../../index.html">
+          <img src="../../assets/img/manoLogo2.png" alt="Logo" width="90" height="80">
+        </a>
+    
+         Botón para menú responsive 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+         Menú 
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item" *ngFor="let p of PAGINES">
+              <a class="nav-link" [ngClass]="{ 'text-warning': quinLink === p.url }" [routerLink]="p.url">
+                {{ p.nom }}
+              </a>
+            </li>
+          </ul>
+    
+           Dropdown de usuario 
+          <div class="dropdown ms-3">
+            <img src="../../assets/img/77c7fec47f7911878509662852d9a8b8.jpg" width="40" height="40" id="usuari" class="rounded-circle user-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="/perfils">Modificar perfil</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item">Cerrar sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>-->
+
   </body>
 </html>
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+

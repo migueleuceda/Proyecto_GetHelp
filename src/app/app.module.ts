@@ -10,15 +10,15 @@ import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { HomeComponent } from './home/home.component';
-
+import { MnusuperiorComponent } from './mnusuperior/mnusuperior.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignUpComponent,
-    HomeComponent
-
+    HomeComponent,
+    MnusuperiorComponent
   ],
   imports: [
     BrowserModule,
