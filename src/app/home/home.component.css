@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: linear-gradient(to right, #FF2D00, #FF8000);
+    background-color: #ff4500;
     color: white;
   }
   
@@ -30,11 +30,8 @@
   /* Main content styles */
   .content {
     text-align: center;
-    padding: 9rem 8rem;
-    background-image: url("/assets/img/fondoHome.jpg");
-    background-size: cover;  
-    background-position: center;
-    background-repeat: no-repeat;  
+    padding: 3rem 2rem;
+    background-color: #f3f3f3;
   }
   
   .subtitle {
@@ -66,9 +63,10 @@
     text-align: center;
     padding: 2rem 0;
     background-color: white;
+    /* width: 10rem; */
   }
   
-  .carousel {
+  .carousel { 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,14 +75,14 @@
   
   .carousel-items {
     display: flex;
-    gap: 5rem;
+    gap: 1rem;
     overflow-x: auto;
     scroll-behavior: smooth;
   }
   
   .carousel-items img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -98,87 +96,6 @@
   }
   
   .carousel-btn:hover {
-    background: linear-gradient(to right, #FF2D00, #FF8000);
-    background-clip: text; /* Propiedad estándar */
-    -webkit-background-clip: text; /* Para navegadores WebKit */
-    -webkit-text-fill-color: transparent; /* Hace que el texto sea transparente */
+    color: #ff4500;
   }
   
-  .footer {
-    background: #111;
-    color: white;
-    padding: 40px 0;
-    font-family: 'Arial', sans-serif;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.footer-section {
-    flex: 1;
-    min-width: 250px;
-    margin: 20px;
-}
-
-.footer-section h2, .footer-section h3 {
-  background: linear-gradient(to right, #FF2D00, #FF8000);
-  background-clip: text; /* Propiedad estándar */
-  -webkit-background-clip: text; /* Para navegadores WebKit */
-  -webkit-text-fill-color: transparent; /* Hace que el texto sea transparente */
-    margin-bottom: 15px;
-}
-
-.footer-section p {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin: 8px 0;
-}
-
-.footer-section ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-section ul li a:hover {
-  background: linear-gradient(to right, #FF2D00, #FF8000);
-  background-clip: text; /* Propiedad estándar */
-  -webkit-background-clip: text; /* Para navegadores WebKit */
-  -webkit-text-fill-color: transparent; /* Hace que el texto sea transparente */
-}
-
-.social-icons a {
-    font-size: 20px;
-    margin-right: 15px;
-    color: white;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  background: linear-gradient(to right, #FF2D00, #FF8000);
-  background-clip: text; /* Propiedad estándar */
-  -webkit-background-clip: text; /* Para navegadores WebKit */
-  -webkit-text-fill-color: transparent; /* Hace que el texto sea transparente */
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 14px;
-    opacity: 0.8;
-}
-

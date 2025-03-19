@@ -6,28 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  newReleases = [
-    '/assets/img/manoLogo.png',
-    '/assets/img/fondoHome.jpg',
-    '/assets/img/manoLogo.png',
-    '/assets/img/fondoHome.jpg',
-    '/assets/img/manoLogo.png',
-    '/assets/img/fondoHome.jpg',
-    '/assets/img/icon_user.png',
-    '/assets/img/icon_user.png',
-    '/assets/img/icon_user.png',
-    '/assets/img/icon_user.png'
-  ];
-  recommended = [
-    '/assets/img/manoLogo.png',
-    '/assets/img/fondoHome.jpg',
-    '/assets/img/manoLogo.png',
-    '/assets/img/fondoHome.jpg',
-    '/assets/img/manoLogo.png',
-    '/assets/img/fondoHome.jpg',
-    '/assets/img/icon_user.png',
-    '/assets/img/icon_user.png',
-    '/assets/img/icon_user.png',
-    '/assets/img/icon_user.png'
-  ];; 
+  newReleases = Array(6).fill('assets/cpp-logo.png');
+  recommended = Array(6).fill('assets/cpp-logo.png');
 }

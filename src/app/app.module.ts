@@ -10,26 +10,31 @@ import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { HomeComponent } from './home/home.component';
-import { MnusuperiorComponent } from './mnusuperior/mnusuperior.component';
+
+import { environment } from '../environments/environment';
+import { FormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFireAuthGuardModule } from '@angular/fire/compat/auth-guard';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignUpComponent,
-    HomeComponent,
-    MnusuperiorComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
+    FormsModule,
   ],
-  providers: [
-    provideFirebaseApp(() => initializeApp({"projectId":"projecteangular-gethelp","appId":"1:974386551404:web:cab7b1e58f11863678d649","databaseURL":"https://projecteangular-gethelp-default-rtdb.firebaseio.com","storageBucket":"projecteangular-gethelp.firebasestorage.app","apiKey":"AIzaSyBhI14NyPE9XGPNU4z7xVPfZwf-2AWeVmQ","authDomain":"projecteangular-gethelp.firebaseapp.com","messagingSenderId":"974386551404","measurementId":"G-741PY21YRF"})),
-    provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore()),
-    provideDatabase(() => getDatabase())
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
